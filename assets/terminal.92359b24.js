@@ -1,0 +1,11 @@
+(function(){const n=document.createElement("link").relList;if(n&&n.supports&&n.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))r(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const s of t.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&r(s)}).observe(document,{childList:!0,subtree:!0});function i(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerpolicy&&(t.referrerPolicy=e.referrerpolicy),e.crossorigin==="use-credentials"?t.credentials="include":e.crossorigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function r(e){if(e.ep)return;e.ep=!0;const t=i(e);fetch(e.href,t)}})();document.addEventListener("DOMContentLoaded",()=>{const o="Curso de Java",n=[{id:"001",title:"\xA1Bienvenido a Java!"},{id:"002",title:"Elementos de un programa Java"},{id:"003",title:"Sintaxis"},{id:"004",title:"Estructuras de Control"},{id:"005",title:"Principios de la Programaci\xF3n Orientada a Objetos"}],i=document.querySelector(".side-bar"),r=n.map(t=>`
+      <div id="class-${t.id}" class="class-entry">
+        <div class="class-number"></div>
+        <div class="class-title">
+          <a href="/courses/${t.id}.html" class="class-link">
+            ${t.title}
+          </a>
+        </div>
+      </div>
+    `).join("");i.innerHTML=r;const e=t=>{var l;const s=n.find(c=>c.id===t);document.querySelectorAll(".class-entry").forEach(c=>{c.classList.remove("selected")}),document.getElementById("class-"+t).classList.add("selected"),document.title=(l=s==null?void 0:s.title)!=null?l:o};window.classId!==void 0&&e(window.classId)});document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("figure img").forEach(o=>{o.addEventListener("click",()=>{window.open(o.src,"_blank")})})});document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll(".terminal").forEach(o=>{const n=document.createElement("button");n.title="Copiar",n.classList.add("copy-btn"),n.innerHTML='<span class="material-icons">content_copy</span>',n.addEventListener("click",()=>{const i=[];o.querySelectorAll("code").forEach(e=>i.push(e.innerText));const r=i.join(`
+`);navigator.clipboard.writeText(r)}),o.appendChild(n)})});
