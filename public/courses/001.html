@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/styles/global.css" rel="stylesheet" type="text/css" />
+  <script>window.classId = '001'</script>
+  <script type="module" src="/main.js"></script>
+</head>
+
+<body>
+  <header class="app-bar">
+    <nav class="app-menu container">
+      <h1 class="app-brand">
+        <a href="/index.html">
+          Curso de Java
+        </a>
+      </h1>
+    </nav>
+  </header>
+  <div class="content container">
+    <nav class="side-bar"></nav>
+    <main>
+      <h1>¡Bienvenido a Java!</h1>
+      <p>
+        En esta sección se verán los siguientes temas:
+      </p>
+      <p>
+        <ul class="content-table">
+          <li>
+            <a href="#que-es-java">
+              ¿Qué es Java?
+            </a>
+          </li>
+          <li>
+            <a href="#instalacion">
+              Instalación
+            </a>
+          </li>
+          <li>
+            <a href="#que-es-un-ide">
+              ¿Qué es un IDE?
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <strong><em>Ejercicio: Hola Java</em></strong>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Tipos de dato primitivos
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Operadores
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Métodos
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <strong>Práctica: Calculadora de Áreas</strong>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <em>Lecturas recomendadas</em>
+            </a>
+          </li>
+        </ul>
+      </p>
+      <h2 id="que-es-java">¿Qué es Java?</h2>
+      <p>
+        Java es un ecosistema de utilidades para realizar las siguientes actividades:
+      </p>
+      <p>
+        <ol class="step-list">
+          <li>
+            <strong><span class="material-icons">edit</span> Escribir</strong> programas en un lenguaje de programación estándar.
+          </li>
+          <li>
+            <strong><span class="material-icons">construction</span> Compilar</strong> el programa para generar código ejecutable.
+          </li>
+          <li>
+            <strong><span class="material-icons">play_arrow</span> Ejecutar</strong> el código compilado previamente.
+          </li>
+        </ol>
+      </p>
+      <p>
+        El <strong>lenguaje de programación Java</strong> es un formato estándar de texto que puede ser interpretado por un compilador y posteriormente ejecutado. Este lenguaje define los bloques de construcción que se pueden utilizar en los programas y las reglas que éstos tienen que cumplir para ser válidos. Al conjunto de estas reglas se le llama <strong>sintaxis</strong>. Para que un programa pueda ser compilado, debe ser escrito con una sintaxis correcta.
+      </p>
+      <p>
+        El <strong>compilador</strong> tiene como función validar que los programas tengan una sintaxis correcta y, de ser así, convertir el texto a un formato ejecutable llanado <strong>bytecode</strong>. En caso contrario, el compilador mostrará los errores correspondientes, indicando el archivo, la línea de código y la razón del error ocurrido.
+      </p>
+      <p>
+        Finalmente, el código es ejecutado por la <strong>máquina virtual de Java</strong>, siguiendo las instrucciones descritas en el programa.
+      </p>
+      <h2 id="instalacion">Instalación</h2>
+      <p>
+        El <strong>JDK (Java Development Kit)</strong> contiene todas las herramientas necesarias para desarrollar programas Java. Puedes descargar el JDK para tu sistema operativo desde el siguiente enlace:
+      </p>
+      <p>
+        <a href="https://adoptium.net/es/temurin/releases/?version=17">
+          https://adoptium.net/es/temurin/releases/?version=17
+        </a>
+      </p>
+      <p>
+        He elegido la <strong>versión 17</strong> del JDK porque a la fecha es la <strong>versión LTS (Long Term Support)</strong> más reciente. Estas versiones son especiales porque reciben mantenimiento durante más tiempo, por lo que suelen ser más estables que el resto.
+      </p>
+      <p>
+        Para instalar Java, puedes descargar el archivo con extensión <code>.msi</code> (Instalador automático) o <code>.zip</code> (Archivos de instalación manual). A continuación se muestra el método de instalación manual (con el archivo zip), para que puedas verificar cada paso en caso de que la instalación automática no funcione correctamente.
+      </p>
+      <p>
+        <ol class="step-list">
+          <li>
+            <strong><span class="material-icons">file_download</span> Descargar</strong> el archivo zip del sitio de Adoptium.
+          </li>
+          <li>
+            <strong><span class="material-icons">folder_zip</span> Extraer</strong> el archivo zip en una ubicación conocida, como en <code>"C:\Program Files"</code>.
+          </li>
+          <li>
+            <figure>
+              <img src="/img/001/Propiedades_de_Equipo.png" alt="Desde el explorador de archivo, hacer click derecho en 'Mi equipo'" />
+              <figcaption>
+                Desde el explorador de archivo, hacer click derecho en <code>"Mi Equipo"</code>.
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="/img/001/Configuracion_avanzada_del_sistema.png"
+                alt="Desde el menú de propiedades, seleccionar la opción 'Configuración avanzada del sistema'" />
+              <figcaption>
+                Desde el menú de propiedades, seleccionar la opción <code>"Configuración avanzada del sistema"</code>.
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="/img/001/Propiedades_del_sistema.png"
+                alt="Desde el menú de propiedades de sistema, seleccionar la opción 'Variables de entorno'" />
+              <figcaption>
+                Desde el menú de propiedades de sistema, seleccionar la opción <code>"Variables de entorno"</code>.
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="/img/001/Variables_de_entorno.png"
+                alt="Desde el menú de variables del sistema, seleccionar la opción 'Nueva' y agregar la variable 'JAVA_HOME' con la ubicación del folder de instalación" />
+              <figcaption>
+                Desde el menú de variables del sistema, seleccionar la opción <code>Nueva</code> y agregar la variable <code>JAVA_HOME</code> con la ubicación del folder de instalación.
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <strong><span class="material-icons">edit</span> Editar</strong> la variable <code>PATH</code> para incluir el folder <code>/bin</code> del folder de instalación.
+          </li>
+          <li>
+            <strong><span class="material-icons">terminal</span> Abrir</strong> la terminal <code>cmd</code> y (Puedes encontrar el programa "cmd" buscando en el menú de inicio de Windows) ejecuta el siguiente comando:
+            <pre class="terminal"><!--
+              --><code>java -version</code><!--
+              --><output>
+<!--           -->openjdk version "11.0.15" 2022-04-19
+<!--           -->OpenJDK Runtime Environment Temurin-11.0.15+10 (build 11.0.15+10)
+<!--           -->OpenJDK 64-Bit Server VM Temurin-11.0.15+10 (build 11.0.15+10, mixed mode)</output><!--
+        --></pre>
+          </li>
+          <li>
+            <strong><span class="material-icons">done</span> Listo</strong>, si la instalación fue correcta, el comando anterior mostrará la versión instalada de Java. De otro modo, revisa los pasos anteriores.
+          </li>
+        </ol>
+      </p>
+      <h2 id="que-es-un-ide">¿Qué es un IDE?</h2>
+    </main>
+  </div>
+</body>
+
+</html>
